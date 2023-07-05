@@ -22,7 +22,7 @@ function Productlist()
   
    
     const deleteProduct = (id) => {
-        axios.delete('http://127.0.0.1:8000/api/productdelete/'+id).then(function(response){
+        axios.delete('http://127.0.0.1:8000/api/product-delete/'+id).then(function(response){
             console.log(response.data);
             alert("Successfully Deleted");
         });
